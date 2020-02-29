@@ -1,0 +1,25 @@
+From 8d907028c417e27f721347f54fcf754ccf122a96 Mon Sep 17 00:00:00 2001
+From: James Ashby <james.ashb@gmail.com>
+Date: Thu, 27 Feb 2020 22:38:29 +0000
+Subject: [PATCH] A really simple patch
+
+---
+ ports/unix/main.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/ports/unix/main.c b/ports/unix/main.c
+index 03f2f357e..aaa3cfa0f 100644
+--- a/ports/unix/main.c
++++ b/ports/unix/main.c
+@@ -300,7 +300,7 @@ STATIC int do_str(const char *str) {
+ 
+ STATIC int usage(char **argv) {
+     printf(
+-"usage: %s [<opts>] [-X <implopt>] [-c <command>] [<filename>]\n"
++"pusage: %s [<opts>] [-X <implopt>] [-c <command>] [<filename>]\n"
+ "Options:\n"
+ "-v : verbose (trace various operations); can be multiple\n"
+ "-O[N] : apply bytecode optimizations of level N\n"
+-- 
+2.20.1
+
