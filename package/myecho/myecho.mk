@@ -1,0 +1,14 @@
+MYECHO_SITE = $(MYECHO_PKGDIR)myecho
+MYECHO_SITE_METHOD = local
+MYECHO_INSTALL_STAGING = NO
+MYECHO_INSTALL_TARGET = YES
+
+define MYECHO_BUILD_CMDS
+	$(MAKE) $(TARGET_CONFIGURE_OPTS) -C $(@D) all
+endef
+
+define MYECHO_INSTALL_TARGET_CMDS
+	$(INSTALL) -D -m 0755 $(@D)/myecho $(TARGET_DIR)/usr/bin
+endef
+
+$(eval $(generic-package))

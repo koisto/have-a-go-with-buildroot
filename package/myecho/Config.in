@@ -1,0 +1,4 @@
+config BR2_PACKAGE_MYECHO
+	bool "Myecho"
+	help
+		A simple echo program that is built with a makefile.
