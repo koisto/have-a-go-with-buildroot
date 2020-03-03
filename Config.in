@@ -1,0 +1,2 @@
+source "$BR2_EXTERNAL_HAVEAGO_PATH/package/myecho/Config.in"
+source "$BR2_EXTERNAL_HAVEAGO_PATH/package/kernelhello/Config.in"

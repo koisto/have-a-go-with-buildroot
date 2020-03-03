@@ -1,0 +1,4 @@
+config BR2_PACKAGE_KERNELHELLO
+	bool "KernelHello"
+	help
+		A simple kernel module.
